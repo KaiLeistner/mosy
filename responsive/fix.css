@@ -1,0 +1,56 @@
+body{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #ddd;
+	font-size: 17px;
+}
+h1 {
+	font-size: 34px;
+}
+h2 {
+	font-size: 30px;
+}
+
+.wrapper{
+	width: 1080px;
+	margin: 48px auto 0;	/* top left=right bottom */
+	background-color: #999;
+}
+
+header{
+	background-color: #666;
+	border-bottom: 1px solid #333;
+}
+
+header h1{
+	padding: 16px;
+	margin: 0;
+}
+
+aside{
+	float: left;
+	width: 160px;
+	padding: 24px 10px;
+}
+
+/* width aside: 160px + 10px + 10px = 180px */
+/* ==> left-margin article: 180px */
+article{
+	padding: 24px 30px;
+	margin-left: 180px;
+	background-color:#FFF;
+}
+article:after{
+/* see http://nicolasgallagher.com/micro-clearfix-hack/ */
+	content:"";
+	display: table;
+	clear:both;
+}
+
+footer{
+	padding: 15px;
+	clear: both;
+	background-color: #666;
+	text-align: right;
+}
