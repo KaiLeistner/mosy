@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+C:\Entwicklung\git\mosy\android\.metadata\.plugins\org.eclipse.jdt.core
+308920073.index
+1083367407.index
+2506325110.index
