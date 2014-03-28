@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IhM-OV-c72"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ug5-Be-X2i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KPR-3J-vmr">
+                                <rect key="frame" x="32" y="91" width="262" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="258" id="jNf-NX-ItM"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="2" eventType="valueChanged" id="rbl-t1-vBQ"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lN1-1I-uPj">
+                                <rect key="frame" x="32" y="151" width="262" height="34"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="2" eventType="valueChanged" id="NWF-I7-tG7"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3je-gp-N9d">
+                                <rect key="frame" x="32" y="216" width="262" height="34"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="2" eventType="valueChanged" id="bTf-Tn-gnQ"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3je-gp-N9d" firstAttribute="top" secondItem="3" secondAttribute="top" constant="216" id="5Cd-LS-L79"/>
+                            <constraint firstItem="lN1-1I-uPj" firstAttribute="trailing" secondItem="KPR-3J-vmr" secondAttribute="trailing" id="9e7-Md-TxO"/>
+                            <constraint firstItem="KPR-3J-vmr" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="34" id="NdH-M9-2N0"/>
+                            <constraint firstItem="KPR-3J-vmr" firstAttribute="top" secondItem="3" secondAttribute="top" constant="91" id="STf-nH-bNY"/>
+                            <constraint firstItem="3je-gp-N9d" firstAttribute="trailing" secondItem="lN1-1I-uPj" secondAttribute="trailing" id="TT6-Vq-YJH"/>
+                            <constraint firstItem="lN1-1I-uPj" firstAttribute="leading" secondItem="KPR-3J-vmr" secondAttribute="leading" id="VzQ-oW-vHa"/>
+                            <constraint firstItem="3je-gp-N9d" firstAttribute="leading" secondItem="lN1-1I-uPj" secondAttribute="leading" id="d2k-vp-xhz"/>
+                            <constraint firstItem="lN1-1I-uPj" firstAttribute="top" secondItem="3" secondAttribute="top" constant="151" id="p1j-z8-3df"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sliderBlue" destination="3je-gp-N9d" id="iVx-C5-hQF"/>
+                        <outlet property="sliderGreen" destination="lN1-1I-uPj" id="4Pb-YR-Ggb"/>
+                        <outlet property="sliderRed" destination="KPR-3J-vmr" id="RyP-6u-HNT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
